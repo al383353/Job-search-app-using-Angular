@@ -1,0 +1,9 @@
+.nav-wrapper{
+  position:center; top:10px; margin-bottom:-30px; right:10px;
+    width:500px; height:80px; background-color:black;
+    color:white; border-style: round($number: 0);
+    margin-left: 195px;
+    .brand-logo{
+      color: white; margin-right:70px;
+    }
+}

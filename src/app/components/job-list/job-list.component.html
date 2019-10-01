@@ -1,0 +1,13 @@
+<div id="form-group">
+
+<div *ngIf="jobs?.length > 0;else nojobs">
+  <ul *ngFor="let job of jobs" class="uljob">
+    <li class="lijob"><strong>Job title: </strong>{{job.title}}<br>
+      <strong>Contact: </strong> {{job.contact}}<br><strong>Deadline: </strong>{{job.deadline}} <br><strong>Experience: </strong> {{job.experience}}</li>
+  </ul>
+</div>
+ <ng-template #nojobs>
+   <hr>
+   <h5>There are no jobs to list.</h5>
+ </ng-template>
+</div>
